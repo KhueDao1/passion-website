@@ -116,8 +116,7 @@ a:link {
 ul{
     font-size: 24px;
     color: darkblue;
-    text-decoration: underline dotted violet;
-    list-style-image: (https://i.postimg.cc/kgZVwQDZ/santa1.png);
+    list-style-type: diamond;
 }
 
 input[type=range]{

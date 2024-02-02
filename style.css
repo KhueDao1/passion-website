@@ -117,7 +117,7 @@ ul{
     font-size: 24px;
     color: darkblue;
     text-decoration: underline dotted violet;
-    list-style-type: space-counter;
+    list-style-image: (https://i.postimg.cc/kgZVwQDZ/santa1.png);
 }
 
 input[type=range]{

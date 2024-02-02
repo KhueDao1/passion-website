@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    overflow-wrap: break-word;
 }
 /*priority element-class-id-inline property*/
 
@@ -75,7 +76,7 @@ h1 {
     font-size: 20vmin;
 }
 h2:hover{
-    text-decoration: overline wavy azure;
+    text-decoration: overline wavy violet;
 }
 img {
     max-width: 100%;
@@ -113,6 +114,7 @@ a:link {
 
 ul{
     font-size: 24px;
+    color: darkblue;
     text-decoration: underline dotted violet;
     list-style-type: space-counter;
 }

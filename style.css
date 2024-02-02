@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+    font-size: 24px;
+    scrollbar-color: violet;
+}
+
+div{
+    max-width: 90vw;
+}
+/*the cascading mean that the rule in lower order is more specific and determines what will show up when there are conflicting properties. SO the para color is pink rather than white like the body property*/
+p {
+    color:lightpink;
+    font-size: 18px;
+    background-color: blue;
+    padding-left: 10px;
+}
+.more-specific{
+    background-color:brown;
+}
+h1 {
+    color: violet;
+    font-size: 20vmin;
+}
+
+img {
+    max-width: 100%;
+    max-block-size: 60vmin ;
+}
+
+button {
+    color: Black;
+    font-weight: 800;
+    border-color: black;
+    background-color: none;
+    text-decoration: none;
+
+}
+
+button:hover {
+    background-color: violet;
+    color: beige;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+
+input[type=range]{
+    cursor:grab;
+}

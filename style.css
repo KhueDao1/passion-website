@@ -74,7 +74,9 @@ h1 {
     color: violet;
     font-size: 20vmin;
 }
-
+h2:hover{
+    text-decoration: overline wavy azure;
+}
 img {
     max-width: 100%;
     max-block-size: 60vmin ;
@@ -93,19 +95,26 @@ button {
     border-color: black;
     background-color: none;
     width: max(96px, 10vw);
+    text-align: right;
 }
 
 button:hover {
     background-color: violet;
     color: antiquewhite;
     font-weight: 800;
-    text-decoration: none;
+    text-align: center;
     border-radius: 2rem;
 }
 
 a:link {
     color:black;
     text-decoration: none;
+}
+
+ul{
+    font-size: 24px;
+    text-decoration: underline dotted violet;
+    list-style-type: space-counter;
 }
 
 input[type=range]{

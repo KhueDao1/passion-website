@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+/*priority element-class-id-inline property*/
+
+body {
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+    font-size: max(18px, 2vw);
+    scrollbar-color: violet;
+}
+
+div{
+    max-width: 90vw;
+    padding-left: 10px;
+}
+/*the cascading mean that the rule in lower order is more specific and determines what will show up when there are conflicting properties. SO the para color is pink rather than white like the body property*/
+
+.square{
+    background-color: darkblue;
+    width: 100px;
+    height: 100px;
+    border: 2px solid antiquewhite;
+    margin: 20px 0; /*if only then: top-bot and left-right margin*/
+}
+
+
+.relative{
+    background-color: orangered;
+    position: relative; /*relative mean that we can adjust the position the original, not moving out of the flow but moving from its relative position*/
+    left: 40px;
+    bottom: 40px;
+}
+
+.fixed{
+    background-color: blueviolet;
+    position: fixed;/*unike relative we can remove from the flow and position fixed to the edge of our screen*/
+    bottom: 10px;
+    right: min(6vw,20px);
+    margin: 0;
+}
+
+.container{
+    background-color: antiquewhite;
+    width: 500px;
+    height: 500px;
+    border: 1px solid darkblue;
+    margin: 20px 0;
+    position: relative;
+}
+
+.absolute{
+    background-color: brown;
+    position: absolute;/*positioned relative to nearest ancestor or the doc, can be remove from the flow*/
+    top: -100px;
+    right: -100px;/*ancestor is the class container*/
+    margin: 0;
+}
+
+p {
+    color:lightpink;
+    font-size: min(18px, 48vw);
+    background-color: blue;
+}
+.more-specific{
+    background-color:blueviolet;
+}
+#even-more-specific{
+    background-color:brown;
+}
+
+h1 {
+    color: violet;
+    font-size: 20vmin;
+}
+
+img {
+    max-width: 100%;
+    max-block-size: 60vmin ;
+    position: sticky;
+}
+
+.navigate{
+    position: fixed;
+    right: min(6vw,20px);
+    top: 0;
+    z-index: 1;
+}
+button {
+    color: Black;
+    font-weight: 800;
+    border-color: black;
+    background-color: none;
+    width: max(96px, 10vw);
+}
+
+button:hover {
+    background-color: violet;
+    color: antiquewhite;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+
+a:link {
+    color:black;
+    text-decoration: none;
+}
+
+input[type=range]{
+    cursor:grab;
+}

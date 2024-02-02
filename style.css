@@ -32,6 +32,7 @@ div{
     position: relative; /*relative mean that we can adjust the position the original, not moving out of the flow but moving from its relative position*/
     left: 40px;
     bottom: 40px;
+    text-align: right;
 }
 
 .fixed{

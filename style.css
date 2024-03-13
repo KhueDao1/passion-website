@@ -101,9 +101,9 @@ button {
 }
 
 button:hover {
-    background-color: violet;
     color: antiquewhite;
     font-weight: 800;
+    background-color: violet;
     text-align: center;
     border-radius: 2rem;
 }
@@ -118,7 +118,15 @@ ul{
     color: darkblue;
     list-style-type: kannada;
 }
+ol{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 input[type=range]{
     cursor:grab;
+}
+.link button{
+    width: maxmin(12vw,144px);
+    font-size: 4vw;
 }
